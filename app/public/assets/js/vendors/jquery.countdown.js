@@ -2,7 +2,7 @@
   'use strict';
 
   $(document).ready(function() {
-    $('.js-timer').countdown('2020/02/03', function(event) {
+    $('.js-timer').countdown('2020/02/17', function(event) {
       var $this = $(this).html(event.strftime(''
         + '<div class="u-timer__section"><strong class="u-timer__amount">%D</strong> <em class="u-timer__period">dias</em></div>'
         + '<div class="u-timer__section"><strong class="u-timer__amount">%H</strong> <em class="u-timer__period">horas</em></div>'
