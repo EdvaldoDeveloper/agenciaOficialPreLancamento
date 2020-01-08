@@ -3,7 +3,7 @@ var mysql = require('mysql');
 var comMySQL = () => {
     console.log('Conexão com bd foi estabelecida');
     return mysql.createConnection({
-        host: 'localhost:3306',
+        host: 'localhost',
         user: 'iscodec1_admin',
         password: 'social49045544',
         database: 'iscodec1_db'
