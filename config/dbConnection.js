@@ -5,7 +5,7 @@ var comMySQL = () => {
     return mysql.createConnection({
         host: 'localhost:3306',
         user: 'iscodec1_admin',
-        password: 'social4904',
+        password: 'social49045544',
         database: 'iscodec1_db'
     });
     
