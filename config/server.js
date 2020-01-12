@@ -5,10 +5,6 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
-
-
-
-
 const expiryDate = new Date( Date.now() + 60 * 60 * 1000 ); // 1 hour
 app.use(session({
   name: 'session',
@@ -22,12 +18,12 @@ app.use(session({
   })
 );
 
-
 app.set('view engine', 'ejs');
 app.set('views', './app/views');
 
 app.use(express.static('./app/public'));
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true}));
+
 
 consign()
     .include('app/routes')
