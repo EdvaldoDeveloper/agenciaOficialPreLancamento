@@ -1,19 +1,26 @@
+const ValidationContract = require('../validation/form')
+
 module.exports = (application) => {
-    
+
     application.get('/', (req, res) => {
         res.render("main/index");
     });
-
     application.post('/contatos/salvar', (req, res) => {
-        var contato = req.body;
+        let contract = new ValidationContract();
+        contract.isEmail(req.body.email, 3, 'O texto para teste');
 
-        var connection = application.config.dbConnection();
-        var contatosModel = application.app.models.contatosModel;
-
+        if (!contract.isValid()) {
+            res.redirect('/erro')
+            return;
+        }
+      
+        let contato = req.body;
+        let connection = application.config.dbConnection();
+        let contatosModel = application.app.models.contatosModel;
         contatosModel.salvarContato(contato, connection, (erro, result) => {
-            // res.render("main/index", { contatos: result });
             res.redirect('/');
-        }); 
+        });
 
     });
-}   
+}
+
