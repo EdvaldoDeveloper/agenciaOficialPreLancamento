@@ -18,7 +18,7 @@ module.exports = (application) => {
         let connection = application.config.dbConnection();
         let contatosModel = application.app.models.contatosModel;
         contatosModel.salvarContato(contato, connection, (erro, result) => {
-            res.redirect('/');
+            res.redirect('/confirmed');
         });
 
     });

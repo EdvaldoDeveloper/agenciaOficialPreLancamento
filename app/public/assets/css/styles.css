@@ -152,7 +152,37 @@ h1, h2, h3, h4, h5, h6 {
   color: #2972fa;
 }
 
-/* Minha styliczação */
+/*----------------------------- 
+          card 
+----------------------------------*/
+.infor {
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+.infor-1 {
+   background-color: #ffffff;
+}
+
+.infor-1:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 100%;
+  background: rgba(72,61,139,0.2);
+  transition: all 2s ease;
+}
+
+.infor-1:hover:before {
+  width: 100%;
+  
+
+}
+
+
+
 
 .my-primary {
   color: #483D8B !important;
@@ -392,6 +422,8 @@ a.my-primary:hover, a.my-primary:focus {
     background-attachment: fixed;
   }
 }
+
+
 
 /*----------------------------------
   Timer

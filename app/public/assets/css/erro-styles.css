@@ -96,3 +96,46 @@
       }
   }
   
+ 
+@media (min-width: 300px) {
+  .notfound .notfound-404 h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    margin: 0px;
+    font-weight: 900;
+   
+  }
+}
+@media (min-width: 400px) {
+  .notfound .notfound-404 h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
+    margin: 0px;
+    font-weight: 900;
+   
+  }
+}
+@media (min-width: 600px) {
+  .notfound .notfound-404 h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 120px;
+    margin: 0px;
+    font-weight: 900;
+   
+  }
+}
+
+@media (min-width: 1024px) {
+  .notfound .notfound-404 h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 200px;
+    margin: 0px;
+    font-weight: 900;
+   
+  }
+}
+
+
+
+
+  
