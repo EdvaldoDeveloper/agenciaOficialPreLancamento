@@ -11,7 +11,7 @@ var comMySQL = () => {
     
 }
 module.exports = () => {
-    console.log('O autoload carregou o modulo de conexão com bd');
+    // console.log('O autoload carregou o modulo de conexão com bd');
     return comMySQL;
 
 }
