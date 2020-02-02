@@ -472,6 +472,7 @@ a.my-primary:hover, a.my-primary:focus {
   text-transform: uppercase;
 }
 
+
 @media (min-width: 576px) {
   .u-timer__section {
     padding: 0 20px;
@@ -503,8 +504,8 @@ a.my-primary:hover, a.my-primary:focus {
 
 }
 .u-content-space {
-  padding-top: 3.25rem;
-  padding-bottom: 5.25rem;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
 }
 
 .u-content-space-top {
