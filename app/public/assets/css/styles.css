@@ -86,10 +86,10 @@ h1, h2, h3, h4, h5, h6 {
 ------------------------------------*/
 
  .lead-font{
-  font-size: 1.30rem;
-  font-weight: 300;
+  font-size: 1.25rem;
+  font-weight: 200;
   line-height: 1.4; 
-  text-indent: 40px;
+  text-indent: 30px;
   
 }
 
